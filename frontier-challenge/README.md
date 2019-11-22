@@ -19,3 +19,6 @@
 - Add React proptypes for props validation
 - Tests
 - Responsive layouts
+
+### Run Application
+- cd into `frontierChallenge` and run `npm run start`
