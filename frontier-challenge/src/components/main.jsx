@@ -35,6 +35,7 @@ class Main extends React.Component {
   // Have some sort of check that validates a user and routing to render the correct view
   // for this challenge the Accounts view is defaulted here. Most likely not always going to 
   // render the accounts, but other views as well
+  // Add some sort of loader state
   render() {
     return (
       <article className="grid">
