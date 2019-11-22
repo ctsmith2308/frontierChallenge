@@ -1,0 +1,134 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+article {
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: 75px 1fr 50px;
+}
+
+header {
+  grid-area: header;
+  background-color: #006643;
+  color: #fff;
+  grid-template-columns: 1% 98% 1%;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2em;
+  color: #006643;
+}
+
+h3 {
+  display: block;
+  font-size: 1.5em;
+  color: #006643;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #006643;
+  color: #fff;
+  grid-template-columns: 1% 98% 1%;
+  grid-template-rows: 5% 90% 5%;
+  align-content: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.title-container {
+  grid-column-start: 2;
+  align-self: center;
+}
+
+.account-column {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px #ccc;
+  grid-row-gap: 15px;
+  grid-template-rows: 3em 13em 12em;
+}
+
+.content-title-container {
+  justify-self: center;
+  height: 1em;
+  grid-row-start: 2;
+  font-size: 20px;
+}
+
+#home-content {
+  padding: 15px;
+  grid-row-gap: 25px;
+  grid-template-rows: 10px 50px auto;
+}
+
+#account-grid {
+  grid-column-gap: 25px;
+  grid-template-columns: 25% 25% 25%;
+  grid-row-start: 3;
+  align-content: center;
+  justify-content: center;
+}
+
+#overdue-account-container-title > h3 {
+  color: #b22222;
+}
+
+#inactive-account-container-title > h3 {
+  color: #808080;
+}
+
+.account-container {
+  padding: 10px 15px;
+  align-self: center;
+}
+
+.account-container-title {
+  padding: 20px;
+}
+
+.account-data-list {
+  height: 150px;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px #ccc;
+  list-style: none;
+}
+
+.account-data-list > li {
+  margin: 10px 0;
+}
+
+.account-data-list > li > label {
+  font-weight: bold;
+  margin: 0 5px 0 0;
+}
+
+.copy {
+  margin: 15px;
+  place-self: end;
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
